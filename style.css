@@ -7,12 +7,12 @@
 .banner{
    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("../GHS_Webmaster23-24/images/greenAI.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/greenAI.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }*/
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("../GHS_Webmaster23-24/images/greenAI.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/greenAI.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
