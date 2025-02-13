@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GHS Webmaster 23-24</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../ghs_webmaster23-24/images/dropletlogo.PNG" class="logo" alt="leaf image">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="home_garden.html">Home Garden</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sources.html">Sources</a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Costs</h1>
+            <p>Applicaiton of herbicide to an entire field is both environmentally unsustainble and costly. Cut down on costs by utilizing our <span style="color:blue;"><a href="practices.html">Green Solution Weed Detector.</a></span> To see how this product may cut down on costs, check out our cost calculator below!</p>
+            <div id = "results"> </div>
+            <script>   
+                let values = [];
+                let i = 0;            
+                const resultsList = document.getElementById('results')
+                new URLSearchParams(window.location.search).forEach((value, name) => {
+                    resultsList.append(`${name}: $${(value/150) * (15.15/128)}`)
+                    values[i++] = (value/150) * (15.15/128)
+                    resultsList.append(document.createElement('br')) 
+                })
+                resultsList.append("Total Saved: $" + (values[0] - values[1]))
+            </script>
+            <a href="costs.html">
+                <button>Calculate Again</button>
+            </a>   
+            <div id="wrapper2">
+                <p3> If you are a home owner looking for herbicide solutions, check out our <a href="home_garden.html">Home Garden</a> tab to learn more about sustainable weed removal in homes!
+                </p3>
+            </div>              
+        </div>
+    </div>
+</body>
+</html>

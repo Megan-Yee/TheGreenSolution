@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GHS Webmaster 23-24</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../ghs_webmaster23-24/images/dropletlogo.PNG" class="logo" alt="leaf image">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="home_garden.html">Home Garden</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Green Solution Calculator</h2>
+            <p>Applicaiton of herbicide to an entire field is both environmentally unsustainble and costly. Cut down on costs by utilizig our calculator! We quickly calculate your reduction in herbicide usage if selective application is implemented. (Prices calculated using a 2% concentration of Monsanto Roundup PowerMAX® 3)</p>
+            
+            <form action = "results.html" method = "GET">
+                <div>
+                    <label>Estimated Field Area(ft²): 
+                        <input name = "Estimated RoundUp Cost(Full Field) ">
+                    </label>
+                </div>
+                <div>
+                    <label>Estimated Weed Area(ft²): 
+                        <input name = "Estimated RoundUp Cost(Weeded Areas) ">
+                    </label>
+                </div>
+                    <button type="submit">Submit</button>
+            </form>
+            <div id="wrapper2">
+                <p3> If you are a home owner looking for herbicide solutions, check out our <a href="home_garden.html">Home Garden</a> tab to learn more about sustainable weed removal in homes!
+                </p3>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
